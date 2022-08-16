@@ -9,7 +9,7 @@ jobs:
     # Sistema operativo
     runs-on: ubuntu-latest
     
-    septs: 
+    steps: 
       # cada step puede tener X actions, que tienen "name" y "run"
       - name: echo a string
         run: echo "Hellow world"
