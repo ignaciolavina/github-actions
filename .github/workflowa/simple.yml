@@ -1,0 +1,20 @@
+name: Shell commands
+
+# on "Event"
+on: [push]
+
+jobs: 
+  # name of the job
+  run-shell-command: 
+    # Sistema operativo
+    runs-on: ubuntu-latest
+    
+    septs: 
+      # cada step puede tener X actions, que tienen "name" y "run"
+      - name: echo a string
+        run: echo "Hellow world"
+      - name: multiline script
+        # el usar el "|" pipe, permite poner dos comandos
+        run: | 
+          node -v
+          npm -v
